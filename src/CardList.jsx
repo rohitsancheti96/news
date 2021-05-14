@@ -1,7 +1,6 @@
 import dayjs from "dayjs";
 import React from "react";
 import "./CardList.css";
-import logo from "./twitter.jpeg";
 
 function CardList({ data }) {
     return (

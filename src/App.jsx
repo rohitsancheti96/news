@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { NavLink, Route, Switch, useLocation } from "react-router-dom";
+import { Route, Switch, useLocation } from "react-router-dom";
 import "./App.css";
 import CardList from "./CardList";
 import axios from "axios";
