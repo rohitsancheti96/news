@@ -1,5 +1,5 @@
-import dayjs from "dayjs";
 import React from "react";
+import dayjs from "dayjs";
 import "./CardList.css";
 
 function CardList({ data }) {
