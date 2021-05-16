@@ -1,0 +1,88 @@
+@import "util";
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    max-width: 950px;
+    margin: 15px auto;
+    grid-gap: 15px 10px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    width: 220px;
+    height: 290px;
+    border: 1px solid $borderColor;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px $borderColor;
+    flex-direction: column;
+}
+header {
+    @include text-overflow;
+    -webkit-line-clamp: 2;
+    font-size: 14px;
+    padding: 5px 7px 0px;
+}
+
+.image {
+    width: 220px;
+    height: 140px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.details {
+   @include text-overflow;
+    font-size: 12px;
+    padding: 5px 7px 4px;
+    margin-bottom: 5px;
+    height: 54px;
+    color: $subtitleColor;
+}
+
+footer {
+    font-size: 12px;
+    background-color: #f4f4f4;
+    border-radius: 0px 0px 10px 10px;
+    padding: 5px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.source {
+    padding: 2px 7px;
+    color: $primaryColor;
+}
+
+.time {
+    padding: 2px 7px;
+}
+
+footer > a {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0px 10px 0px 0px;
+    cursor: pointer;
+    color: #000;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 950px) {
+    .list {
+        max-width: 700px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .list {
+        max-width: 460px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .list {
+        max-width: 240px;
+    }
+    
+}

@@ -1,0 +1,10 @@
+$primaryColor: #d8b3a3;
+$subtitleColor: #808080;
+$borderColor: #d3d3d3;
+
+@mixin text-overflow {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }

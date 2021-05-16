@@ -1,0 +1,41 @@
+@import 'util';
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.btn {
+    height: 15px;
+    display: flex;
+    align-items: center;
+    border: 1px solid $borderColor;
+    border-radius: 30px;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: $primaryColor;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin: 10px auto;
+}
+
+a.active {
+    border: 2px solid $primaryColor;
+}
+
+@media only screen and (max-width: 460px) {
+    nav{
+        overflow: auto;
+        width: 100%;
+        margin: 10px 0px;
+        justify-content: flex-start;
+    }
+}
